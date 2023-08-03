@@ -41,3 +41,38 @@ if(array.length > 0){
 else{
     console.log("No elements are in the array")
 }
+
+//Objects
+
+a = {
+    car: "Audi", 
+    model: "A8" ,
+    airbags: 8,
+    wheels: 5,
+    color: "blue"
+}
+console.log(a['color'])
+console.log(a.airbags)
+var some = 'model'
+console.log(a[some])
+console.log(a)
+//change features
+a.car = "BMW"
+console.log(a)
+//add features
+a.sunroof = "Yes"
+console.log(a)
+//nested object
+a.sunroof = {isPresent: "Yes",Shape: "Rectangle"}
+console.log(a)
+console.log(a.sunroof.isPresent)
+
+for (var ele in a){
+    console.log(ele +":" + a[ele])
+    if(typeof a[ele] === "object")
+    {
+        for (var val in a[ele]){
+            console.log(val +":" + a[ele][val])
+        }
+    }
+}
