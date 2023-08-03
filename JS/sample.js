@@ -43,3 +43,4 @@ while(i <=a){
 
 array = [10,20]
 array.forEach(element => console.log(element));
+

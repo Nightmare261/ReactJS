@@ -76,3 +76,24 @@ for (var ele in a){
         }
     }
 }
+
+// functions
+function fun_name() {
+    console.log("5" + 5 + 5)
+}
+fun_name()
+
+function fun_new() {
+    console.log(5 + 5 + "5")
+}
+fun_new()
+
+function fun_edit() {
+    console.log(5 + "5" + 5)
+}
+fun_edit()
+
+function fun1(a,b) {
+    console.log(5+b + 5+a + " Jo " +5)
+}
+fun1(2,7)
